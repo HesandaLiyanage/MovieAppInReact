@@ -3,9 +3,11 @@ import './Home.css'
 import Navbar from "../../components/Navbar/Navbar"
 
 const HOme =() =>{
-    render (
+    return (
         <div className='home'>
             <Navbar />
         </div>
     )
 }
+
+export default Home

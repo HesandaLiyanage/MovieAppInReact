@@ -4,13 +4,23 @@ import logo from '../../assets/logo.png'
 
 
 const Navbar= () => {
-    render (
+    return (
         <div className='navbar'>
             <div className="navbar-left">
-                nkobo
+                
                 <img src={logo} alt="" />
+                <ul>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                    
+                </ul>
             </div>
             <div className="navbar-right"></div>
         </div>
     )
 }
+
+export default Navbar
