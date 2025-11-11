@@ -16,6 +16,8 @@ const Home =() =>{
                 <p>
                     Nigga
                 </p>
+
+                
                 </div>
             </div>
         </div>
