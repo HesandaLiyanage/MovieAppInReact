@@ -11,7 +11,7 @@ const Home =() =>{
             <Navbar />
             <div className="hero">
                 <img src={hero_banner} alt="" className='banner-img'/>
-                <div className="hero-captin">
+                <div className="hero-caption">
                 <img src={hero_title} alt="" className='caption-img'/>
                 <p>
                     Nigga
