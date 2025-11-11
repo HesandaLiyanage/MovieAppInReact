@@ -14,6 +14,11 @@
 
 }
 
+.card-list::-webkit-scrollbar{
+    display:none;
+    display:none;
+}
+
 .card-list img{
     width:240px;
     border-radius: 4px;
