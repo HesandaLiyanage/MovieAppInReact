@@ -85,6 +85,10 @@ that nigga sees a 'ref'. like whaaaa.
 - React takes that **real DOM element** and puts it in the box!
 - Now: `cardsRef.current = <the actual div element>`
 
+ok now useRef is mapped. and rendering is fully done. 
+
+TIME TO RUN UseEffect
+
 Now...what exactly should happen when we scroll. its defined in this funciton - 
 ------->
 cosnt handleWheel = (event) =>{
