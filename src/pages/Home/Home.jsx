@@ -16,8 +16,11 @@ const Home =() =>{
                 <p>
                     Nigga
                 </p>
-
-                
+                <div className="hero-btns">
+                    <button>
+                        <img src={} alt="" />
+                    </button>
+                </div>
                 </div>
             </div>
         </div>
