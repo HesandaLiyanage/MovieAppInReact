@@ -20,3 +20,5 @@ const TitleCards = () => {
         </div>
     )
 }
+
+export default TitleCards
