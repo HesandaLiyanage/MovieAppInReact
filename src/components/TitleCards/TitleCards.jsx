@@ -9,7 +9,10 @@ const TitleCards = () => {
                 Popular On Netflix
             </h2>
             <div className="card-list">
-                {cards_data.map((card)=>)}
+                {cards_data.map((card,index)=>{
+                    return <div className='card' key={index}> 
+                    <img src=
+                })}
             </div>
         </div>
     )
