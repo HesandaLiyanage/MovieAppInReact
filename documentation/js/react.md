@@ -89,6 +89,21 @@ ok now useRef is mapped. and rendering is fully done.
 
 TIME TO RUN UseEffect
 
+useEffect(() => {
+    cardsRef.current.addEventListener('wheel', handleWheel)
+}, [])
+
+
+**What happens:**
+
+1. **`cardsRef.current`** - Gets the actual `<div class="card-list">` element from the box
+2. **`.addEventListener('wheel', handleWheel)`** - Tells the browser:
+```
+Browser: "Okay, whenever someone uses the mouse wheel 
+         while hovering over this div, call the handleWheel function"
+
+
+
 Now...what exactly should happen when we scroll. its defined in this funciton - 
 ------->
 cosnt handleWheel = (event) =>{
@@ -98,4 +113,21 @@ cosnt handleWheel = (event) =>{
 }
 <--------------------
 
+what does event.preventDefault(); do
+prevents default behavior of the wheel event.
+
+.scrollLeft
+
+A property of the DOM element
+Controls horizontal scroll position in pixels
+scrollLeft = 0 means scrolled all the way left
+scrollLeft = 500 means scrolled 500px to the right;
+
+event.deltaY
+
+How much you scrolled vertically with the mouse wheel
+Positive number = scrolling down
+Negative number = scrolling up
+
+Examples:
 
