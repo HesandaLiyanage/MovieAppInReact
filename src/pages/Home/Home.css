@@ -6,6 +6,8 @@
     width:100%;
     mask-image:linear-gradient(to right, transparent, black 75%);
     -webkit-mask-image:linear-gradient(to right, transparent, black 75%);
+    mask-image:linear-gradient(to down, transparent, black 75%);
+
 
 }
 
