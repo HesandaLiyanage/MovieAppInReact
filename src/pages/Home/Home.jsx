@@ -31,9 +31,8 @@ const Home =() =>{
                 </div>
                 
                 </div>
-                <TitleCards />
-                 
             </div>
+            <TitleCards />
             
         </div>
     )
