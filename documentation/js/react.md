@@ -73,7 +73,10 @@ useEffect(() => {
 
 so this bih runs after redering. AfterEffect.
 so react schedules this code but doesnt run it yet. 
-[] this nigga tells 
+[] this nigga tells react only run this once after first render. 
+
+while react rendering the dom shit....
+
 
 
 Now...what exactly should happen when we scroll. its defined in this funciton - 
