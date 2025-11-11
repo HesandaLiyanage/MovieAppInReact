@@ -28,3 +28,13 @@
     font-size:17px;
     margin-bottom:20px;
 }
+
+.hero-btns {
+    display:flex;
+    gap:10px;
+    margin-bottom:50px
+}
+
+.hero-btns .btn img{
+    
+}
