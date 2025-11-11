@@ -48,5 +48,10 @@ Just yatata gannava
 --------------------------------------------
 WHat does max-wdith do?
 just width but with max. thats the maximum its going to go. so in large screens it wont get like rediculously huge.
+----------------------------------------------
+display:felx;
+
+this arranges buttons horizontally in a row
+
 
 
