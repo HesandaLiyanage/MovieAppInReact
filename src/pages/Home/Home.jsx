@@ -22,9 +22,11 @@ const Home =() =>{
                     Nigga
                 </p>
                 <div className="hero-btns">
-                    <button>
+                    <button className='btn'>
                         <img src={play-icon} alt="" />Play</button>
+                        <button className='btn dark-btn'>
                         <img src={info-icon} alt="" />More Info</button>
+                        
                 </div>
                 </div>
             </div>
