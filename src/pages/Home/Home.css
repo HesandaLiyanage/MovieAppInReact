@@ -8,3 +8,10 @@
     -weblit-mask-image:linear-gradient(to right, transparent, black 75%);
 
 }
+
+.hero-caption {
+    position:absolute;
+    width:100%;
+    padding-left:6%;
+    bottom:0; 
+}
