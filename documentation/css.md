@@ -58,4 +58,12 @@ overflow-x:scroll;
 
 what does this do ?? 
 so basically if you had something like overflowing to the y direction or x direction then you can make it scroll instad of going out og the frame 
+---------------------------------------------------
+.card-list::-webkit-scrollbar {
+    display: none;
+}
+
+What does this do then ?
+
+this just hides the scroll bar... but still we can scroll tho. 
 
