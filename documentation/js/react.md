@@ -76,8 +76,14 @@ so react schedules this code but doesnt run it yet.
 [] this nigga tells react only run this once after first render. 
 
 while react rendering the dom shit....
+that nigga sees a 'ref'. like whaaaa.
+<div className="card-list" ref={cardsRef}>
+```
 
-
+**What happens:**
+- React creates the actual `<div class="card-list">` element in the browser
+- React takes that **real DOM element** and puts it in the box!
+- Now: `cardsRef.current = <the actual div element>`
 
 Now...what exactly should happen when we scroll. its defined in this funciton - 
 ------->
