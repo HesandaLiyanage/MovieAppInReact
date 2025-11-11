@@ -23,5 +23,7 @@ well its basically for child elements. so like in child element if you want to g
 ------------------------------------------------
 what does padding-left:6% do ?
 
+pushes content 6% from the left edge, and this is responsive too because we used a percentage. 
+-------------------------------------------
 
 
