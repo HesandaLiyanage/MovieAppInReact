@@ -63,6 +63,13 @@ like in here.
 but why?
 cus we need to catch that actuall dom element that we want to manipulate yk. and then what we want to do? we want to make scrolling weird. so we have to put some event listeners to that reference and then do some cool shit with it .
 
+now we rendering happens. before rendirng useRef happens. 
+
+after redering we doing a event listener to catch scrolls
+that is -
+
+
+
 Now...what exactly should happen when we scroll. its defined in this funciton - 
 ------->
 cosnt handleWheel = (event) =>{
