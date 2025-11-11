@@ -5,7 +5,12 @@ import cards_data from '../../assets/cards/Cards_data'
 const TitleCards = () => {
     render (
         <div className = 'titlecards'>
-            
+            <h2>
+                Popular On Netflix
+            </h2>
+            <div className="card-list">
+                {cards_data.map((card)=>)}
+            </div>
         </div>
     )
 }
