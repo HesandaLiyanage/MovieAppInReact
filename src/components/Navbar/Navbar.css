@@ -36,5 +36,21 @@
     display:flex;
     align-items:center;
     gap:20px;
+}
 
+.navbar-right .icons{
+    width:20px;
+    curson:pointer;
+}
+
+.navbar-right .profile {
+    border-radius:4px;
+    border:40px;
+}
+
+.navbar-profile {
+    display:flex;
+    align-items:center;
+    gap:10px;
+    cursor:pointer;
 }
