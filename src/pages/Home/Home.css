@@ -55,4 +55,8 @@
 
 }
 
-.hero-btns .btn.dark
+.hero-btns .btn.dark-btn {
+    color:white;
+    background: #6d6d6eb3;
+
+}
