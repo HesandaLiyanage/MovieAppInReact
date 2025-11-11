@@ -25,5 +25,27 @@ what does padding-left:6% do ?
 
 pushes content 6% from the left edge, and this is responsive too because we used a percentage. 
 -------------------------------------------
+bottom:0;
+
+- Positions caption at the **bottom of `.hero`**
+- Combined with `position: absolute`
+- Creates Netflix's classic "text at bottom" look
+
+**Visual:**
+```
+┌─────────────────────────────┐
+│                             │
+│     Banner Image            │
+│                             │
+│                             │ ← position: absolute
+│ [Title]                     │   anchors here
+│ Description text            │ ← bottom: 0
+│ [Play] [More Info]          │
+└─────────────────────────────┘
+
+Just yatata gannava
+
+--------------------------------------------
+WHat does max-wdith do?
 
 
