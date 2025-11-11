@@ -8,7 +8,10 @@ const Home =() =>{
         <div className='home'>
             <Navbar />
             <div className="hero">
-                <img src="" alt="" />
+                <img src={hero_banner} alt="" className='banner-img'/>
+                <div className="hero-captin">
+                    
+                </div>
             </div>
         </div>
     )
