@@ -10,11 +10,12 @@ const TitleCards = () => {
             </h2>
             <div className="card-list">
                 {cards_data.map((card,index)=>{
-                    return
+                    return (
                     <div className='card' key={index} > 
                     <img src={card.image} alt="" />
                     <p>{card.name}</p>
                     </div>
+                    )
                 })}
             </div>
         </div>

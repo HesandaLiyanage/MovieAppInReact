@@ -29,9 +29,10 @@ const Home =() =>{
                         <img src={info_icon} alt="" />More Info</button>
                         
                 </div>
-                <TitleCards />
+                
                 </div>
             </div>
+            <TitleCards />
         </div>
     )
 }
