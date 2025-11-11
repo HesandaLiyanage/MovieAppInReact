@@ -18,3 +18,6 @@ Safari/Chrome compatibility
 -webkit- is a vendor prefix for older WebKit browsers
 Same effect as mask-image but for better browser support
 
+what does position do. 
+well its basically for child elements. so like in child element if you want to go relative to the parent components then you have to set parent component to relative and then that child component to "position:relative"
+
