@@ -53,5 +53,9 @@ display:felx;
 
 this arranges buttons horizontally in a row
 
+--------------------------------------------------
+overflow-x:scroll;
 
+what does this do ?? 
+so basically if you had something like overflowing to the y direction or x direction then you can make it scroll instad of going out og the frame 
 
