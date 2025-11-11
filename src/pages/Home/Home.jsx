@@ -12,7 +12,10 @@ const Home =() =>{
             <div className="hero">
                 <img src={hero_banner} alt="" className='banner-img'/>
                 <div className="hero-captin">
-                <img src={hero_title} alt="" className='banner-img'/>
+                <img src={hero_title} alt="" className='caption-img'/>
+                <p>
+                    Nigga
+                </p>
                 </div>
             </div>
         </div>
