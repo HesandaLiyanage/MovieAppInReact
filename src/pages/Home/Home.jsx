@@ -2,7 +2,7 @@ import React from 'react'
 import './Home.css'
 import Navbar from "../../components/Navbar/Navbar"
 
-const HOme =() =>{
+const Home =() =>{
     return (
         <div className='home'>
             <Navbar />
