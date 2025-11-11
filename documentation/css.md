@@ -10,3 +10,11 @@ mask-image: linear-gradient(to right, transparent, black 75%);
 this gradient goes frm left to right
 fully transparent on the left.
 fully black on the right
+
+so we can see the text on the left side clearly
+-webkit-mask-image: linear-gradient(...);
+
+Safari/Chrome compatibility
+-webkit- is a vendor prefix for older WebKit browsers
+Same effect as mask-image but for better browser support
+
