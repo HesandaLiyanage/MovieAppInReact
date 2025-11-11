@@ -67,7 +67,13 @@ now we rendering happens. before rendirng useRef happens.
 
 after redering we doing a event listener to catch scrolls
 that is -
+useEffect(() => {
+    cardsRef.current.addEventListener('wheel', handleWheel)
+}, [])
 
+so this bih runs after redering. AfterEffect.
+so react schedules this code but doesnt run it yet. 
+[] this nigga tells 
 
 
 Now...what exactly should happen when we scroll. its defined in this funciton - 
