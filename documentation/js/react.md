@@ -129,5 +129,5 @@ How much you scrolled vertically with the mouse wheel
 Positive number = scrolling down
 Negative number = scrolling up
 
-Examples:
+
 
