@@ -30,7 +30,7 @@ const Footer = ()=> {
                 <li>Corporate Information</li>
                 <li>Contact Us</li>
             </ul>
-            <p className="copyright-text"></p>
+            <p className="copyright-text">1997-2023 Netflix</p>
         </div>
     )
 }
