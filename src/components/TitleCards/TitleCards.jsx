@@ -18,7 +18,7 @@ const TitleCards = ({title,category}) => {
         <div className = 'titlecards'>
             <h2>
                 {title?title:"Popular On Netflix"}
-                Conditional rendering
+                {/* Conditional rendering */}
             </h2>
             <div className="card-list" ref={cardsRef}>
                 {cards_data.map((card,index)=>{
