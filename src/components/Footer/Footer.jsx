@@ -4,7 +4,9 @@ import './Footer.jsx'
 const Footer = ()=> {
     render(
         <div className = 'footer'>
-            
+            <div className="footer-icons">
+                
+            </div>
         </div>
     )
 }
