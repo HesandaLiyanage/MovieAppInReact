@@ -67,3 +67,6 @@ What does this do then ?
 
 this just hides the scroll bar... but still we can scroll tho. 
 
+this webkit is supported only by safari and chrome
+to work with firefox use -moz 
+
