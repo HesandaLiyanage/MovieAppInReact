@@ -6,7 +6,7 @@ import hero_title from "../../assets/hero_title.png"
 import play_icon from "../../assets/play_icon.png"
 import info_icon from "../../assets/info_icon.png"
 import TitleCards from "../../components/TitleCards/TitleCards"
-import footer from "../../components/Footer/Footer"
+import Footer from "../../components/Footer/Footer"
 
 
 
@@ -41,7 +41,7 @@ const Home =() =>{
                 <TitleCards title={"Upcoming"}/>
             </div>
             
-            <footer />
+            <Footer />
         </div>
     )
 }
