@@ -8,7 +8,7 @@ import facebook_icon from '../../assets/facebook_icon.png'
 
 
 const Footer = ()=> {
-    render(
+    return(
         <div className = 'footer'>
             <div className="footer-icons">
                 <img src={facebook_icon} alt="" />
