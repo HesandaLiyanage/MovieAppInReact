@@ -16,6 +16,11 @@ const Footer = ()=> {
                 <img src={twitter_icon} alt="" />
                 <img src={youtube_icon} alt="" />
             </div>
+            <ul>
+                <li>
+                    Audio D
+                </li>
+            </ul>
         </div>
     )
 }
