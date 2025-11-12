@@ -17,9 +17,13 @@ const Footer = ()=> {
                 <img src={youtube_icon} alt="" />
             </div>
             <ul>
-                <li>
-                    Audio D
-                </li>
+                <li>Audio Description</li>
+                <li>Help Centre</li>
+                <li>Gift Cards</li>
+                <li>Media Centre</li>
+                <li>Investor Relations</li>
+                <li>Audio Description</li>
+                
             </ul>
         </div>
     )
