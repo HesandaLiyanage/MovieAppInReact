@@ -34,3 +34,5 @@ const Footer = ()=> {
         </div>
     )
 }
+
+export default 
