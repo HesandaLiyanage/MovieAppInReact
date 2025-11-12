@@ -82,4 +82,9 @@
     margin-top: 40px;
     color:#737373;
 }
-.form-switch
+.form-switch span {
+    margin-left:6px;
+    color:#ffff;
+    font-weight:500;
+    cursor:pointer;
+}
