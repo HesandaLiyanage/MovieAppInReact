@@ -11,6 +11,9 @@ const Footer = ()=> {
     render(
         <div className = 'footer'>
             <div className="footer-icons">
+                <img src={facebook_icon} alt="" />
+                <img src={instagram_icon} alt="" />
+                <img src={twitter_icon} alt="" />
                 <img src={youtube_icon} alt="" />
             </div>
         </div>
