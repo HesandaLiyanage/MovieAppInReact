@@ -35,7 +35,10 @@ const Home =() =>{
                 
             </div>
             <div className="more-cards">
-                
+                <TitleCards />
+                <TitleCards />
+                <TitleCards />
+                <TitleCards />
             </div>
             
             
