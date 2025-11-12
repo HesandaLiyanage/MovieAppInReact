@@ -35,7 +35,7 @@ const Home =() =>{
                 
             </div>
             <div className="more-cards">
-                <TitleCards />
+                <TitleCards title={"/>
                 <TitleCards />
                 <TitleCards />
                 <TitleCards />
