@@ -27,10 +27,10 @@ const Footer = ()=> {
                 <li>Privacy</li>
                 <li>Legal Notices</li>
                 <li>Cookie Preferences</li>
-                <li>Audio Description</li>
-                <li>Audio Description</li>
-                <li>Audio Description</li>
+                <li>Corporate Information</li>
+                <li>Contact Us</li>
             </ul>
+            <p
         </div>
     )
 }
