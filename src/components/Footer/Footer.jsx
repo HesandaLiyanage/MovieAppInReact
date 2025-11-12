@@ -22,8 +22,14 @@ const Footer = ()=> {
                 <li>Gift Cards</li>
                 <li>Media Centre</li>
                 <li>Investor Relations</li>
+                <li>Jobs</li>
+                <li>Terms Of Use</li>
+                <li>Privacy</li>
+                <li>Legal Notices</li>
+                <li>Cookie Preferences</li>
                 <li>Audio Description</li>
-                
+                <li>Audio Description</li>
+                <li>Audio Description</li>
             </ul>
         </div>
     )
