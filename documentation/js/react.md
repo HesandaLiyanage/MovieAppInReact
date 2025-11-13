@@ -158,6 +158,6 @@ const options = {
 
 res is the raw response from server like a sealed package. 
 
-.json 
+.json() is to unpack it in to readable javascript object
 
 
