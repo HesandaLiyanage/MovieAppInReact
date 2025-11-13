@@ -1,17 +1,36 @@
-import React, {useRef, useEffect} from 'react'
+import React, {useRef, useEffect, useState} from 'react'
 import './TitleCards.css'
 import cards_data from '../../assets/cards/Cards_data'
 
 const TitleCards = ({title,category}) => {
-
+    const [apiData, setApiData] = useState([]); //this is for the api
     const cardsRef = useRef();
+
+    //API KEY FOR MOVIE DATA 
+    const options = {
+    method: 'GET',
+    headers: {
+        accept: 'application/json',
+        Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyNjA1MGMzOTdjZjViMDZiOWIwOGIxOTYyNWQzM2Y2YSIsIm5iZiI6MTc2Mjk0OTU1Ni40NTgsInN1YiI6IjY5MTQ3OWI0YTc3MGZmMzhjNWMwNmUwZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.X2d3M0-dvs5_EaBDBArlJDZeEQxqlhaF-VHHcdII1bI'
+        }
+    };
+
+    
+
 
     const handleWheel = (event) => {
         event.preventDefault;
         cardsRef.current.scrollLeft += event.deltaY;
     }
 
-    useEffect(()=>{cardsRef.current.addEventListener('wheel',handleWheel)}, [])
+    useEffect(()=>{
+
+          fetch('https://api.themoviedb.org/3/movie/now_playing?language=en-US&page=1', options)
+          .then(res => res.json())
+          .then(res => setApiData(res.results)) //results is the object that we want from the api data
+          .catch(err => console.error(err));
+        
+        cardsRef.current.addEventListener('wheel',handleWheel)}, [])
 
 
     return (
@@ -21,11 +40,11 @@ const TitleCards = ({title,category}) => {
                 {/* Conditional rendering */}
             </h2>
             <div className="card-list" ref={cardsRef}>
-                {cards_data.map((card,index)=>{
+                {apiData.map((card,index)=>{
                     return (
                     <div className='card' key={index} > 
                     <img src={card.image} alt="" />
-                    <p>{card.name}</p>
+                    <p>{card.original_title}</p>
                     </div>
                     )
                 })}

@@ -13,7 +13,7 @@ this is persist across rerenders. so like a let var
 
 useEffect - 
 remeber this as aftereffects lol.
-this hook runs after the component rendering happened. 
+this hook runs after the component rendering happened.  
 this aint gonna stay after a render. 
 blud gone after one reload.
 
