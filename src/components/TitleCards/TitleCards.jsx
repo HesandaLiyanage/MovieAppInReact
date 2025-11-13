@@ -43,7 +43,7 @@ const TitleCards = ({title,category}) => {
                 {apiData.map((card,index)=>{
                     return (
                     <div className='card' key={index} > 
-                    <img src={card.image} alt="" />
+                    <img src={card.backdrop_path} alt="" />
                     <p>{card.original_title}</p>
                     </div>
                     )
