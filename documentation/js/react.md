@@ -173,6 +173,10 @@ if there is an error then
 so in here this is the flow - 
 
 first with react component mounts and then
-after re
+after rendering useeffect runs.
+ in our useeffect we have a fetch. so it fetches.
+ pars json and gets the movie array and then save that to setApiData(res.results) state.
+
+now react re-renders to show the movies. 
 
 
