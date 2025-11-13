@@ -139,6 +139,14 @@ fetch(`https://api.themoviedb.org/3/movie/${category?category:"now_playing"}?lan
 
 what is this. so basically like in fetch you have the path like the link to get the data. endpoint is /movie/now_playing part. and after that we have query parameters.
 
+const options = {
+    method: 'GET',
+    headers: {
+        accept: 'application/json',
+        Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyNjA1MGMzOTdjZjViMDZiOWIwOGIxOTYyNWQzM2Y2YSIsIm5iZiI6MTc2Mjk0OTU1Ni40NTgsInN1YiI6IjY5MTQ3OWI0YTc3MGZmMzhjNWMwNmUwZCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.X2d3M0-dvs5_EaBDBArlJDZeEQxqlhaF-VHHcdII1bI'
+        }
+    };
 
+    in here we have the options object. in here bearer is a authorization technique in APIs
 
 
