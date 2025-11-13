@@ -161,6 +161,10 @@ res is the raw response from server like a sealed package.
 .json() is to unpack it in to readable javascript object
 this .then returns a promise (another thing to wait for)
 
+.then(res => setApiData(res.results))
 
+now res is the actual move data. 
+res.results have the array of 20 movies isnide.
+setApiData(res.results) = this saves it to state so react can display it
 
 
