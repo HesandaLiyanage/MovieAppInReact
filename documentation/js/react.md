@@ -149,4 +149,15 @@ const options = {
 
     in here we have the options object. in here bearer is a authorization technique in APIs
 
+    alright so in the fetch we have .then . then alot
+    that means after that do this , after that do this and so on. 
+
+.then(res => res.json())
+.then(res => setApiData(res.results))
+.catch(err => console.error(err));
+
+res is the raw response from server like a sealed package. 
+
+.json 
+
 
