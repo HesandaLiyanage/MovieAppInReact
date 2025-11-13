@@ -167,4 +167,12 @@ now res is the actual move data.
 res.results have the array of 20 movies isnide.
 setApiData(res.results) = this saves it to state so react can display it
 
+if there is an error then
+.catch(err=> console.error(err))
+
+so in here this is the flow - 
+
+first with react component mounts and then
+after re
+
 
