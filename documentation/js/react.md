@@ -129,5 +129,15 @@ How much you scrolled vertically with the mouse wheel
 Positive number = scrolling down
 Negative number = scrolling up
 
+-------------------------------------
+React APIs
+
+fetch(`https://api.themoviedb.org/3/movie/${category?category:"now_playing"}?language=en-US&page=1`, options)
+          .then(res => res.json())
+          .then(res => setApiData(res.results)) //results is the object that we want from the api data
+          .catch(err => console.error(err));
+
+what is this. so basically
+
 
 
