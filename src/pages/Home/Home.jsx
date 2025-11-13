@@ -29,7 +29,8 @@ const Home =() =>{
                         <img src={info_icon} alt="" />More Info</button>
                         
                 </div>
-                <TitleCards />
+                <TitleCards /> 
+                {/*in here we passing without the props so itll show now playing */}
                 
                 </div>
                 
