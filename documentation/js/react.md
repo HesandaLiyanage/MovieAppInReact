@@ -137,7 +137,8 @@ fetch(`https://api.themoviedb.org/3/movie/${category?category:"now_playing"}?lan
           .then(res => setApiData(res.results)) //results is the object that we want from the api data
           .catch(err => console.error(err));
 
-what is this. so basically
+what is this. so basically like in fetch you have the path like the link to get the data. endpoint is /movie/now_playing part. and after that we have query parameters.
+
 
 
 
