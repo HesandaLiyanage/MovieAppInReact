@@ -9,7 +9,12 @@ const Player = () => {
             <img src={back_arrow_icon} alt="" />
             <iframe width='90%' height='90%'
             src='https://youtube.com/embed/dQw4w9WgXcQ'
-            title="trailer" frameborder='0' allowFullscreen></iframe>
+            title="trailer" frameborder='0' allowFullScreen></iframe>
+            <div className="player-info">
+                <p>Published date</p>
+                <p>Name</p>
+                <p>Type</p>
+            </div>
         </div>
     )
 }
