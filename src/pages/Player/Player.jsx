@@ -4,7 +4,7 @@ import back_arrow_icon from '../../assets/back_arrow_icon.png'
 
 
 const Player = () => {
-    render (
+    return (
         <div className='player'>
             <img src={back_arrow_icon} alt="" />
             <iframe width='90%' height='90%'
