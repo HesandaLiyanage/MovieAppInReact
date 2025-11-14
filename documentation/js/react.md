@@ -177,6 +177,20 @@ after rendering useeffect runs.
  in our useeffect we have a fetch. so it fetches.
  pars json and gets the movie array and then save that to setApiData(res.results) state.
 
-now react re-renders to show the movies. 
+now react re-renders to show the movies with the map function. 
+
+// ❌ WRONG
+fetch`https://...`
+
+// ✅ CORRECT
+fetch(`https://...`)
+
+// ❌ WRONG
+<img src=`https://image.tmdb.org/t/p/w500`+ card.backdrop_path} alt="" />
+
+// ✅ CORRECT
+<img src={`https://image.tmdb.org/t/p/w500${card.backdrop_path}`} alt="" />
+
+
 
 
