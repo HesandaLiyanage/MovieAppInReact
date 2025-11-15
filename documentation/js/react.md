@@ -309,7 +309,16 @@ this is the configuration file.
 in here we need to create every function to happen through firebase. so we need to happen login signup and log out. so we should  have 3 funcitns.
 that firebase config has the data it need to connect with our firebase account like api keys and shit. 
 
-with firebase you can get signinwithemailandpassword type functions. those are built in functions in firebase.we just have to pass the need shit thats all. basically the initialization. 
+with firebase you can get signinwithemailandpassword type functions. those are built in functions in firebase.we just have to pass the need shit thats all. 
+
+const app = intializeApp(firebaseConfig);
+basically the initialization. 
+
+const analytics = getAnalytics(app)
+this to set up firebase analytics to get app usage and shit
+
+
+
 
 
 
