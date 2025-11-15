@@ -27,7 +27,8 @@ const db = getFirestore(app);
 const signup = async (name, email, password) => {
     try {
         const res = await createUserWithEmailAndPassword(auth,email,password)
-
+        const user = res.user;
+        
     } catch (error) {
 
     }
