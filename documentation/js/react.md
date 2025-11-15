@@ -318,6 +318,8 @@ const analytics = getAnalytics(app)
 this to set up firebase analytics to get app usage and shit
 
 const auth = getAuth(app)
+initialize the auth service
+
 
 
 
