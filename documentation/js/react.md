@@ -323,7 +323,9 @@ initialize the auth service
 const db = getFirestore(app)
 initialize cloud firestore (this is a nosql db)
 
+other functions are just basically do the work yk.
 
+ok then how we can implement this in 
 
 
 
