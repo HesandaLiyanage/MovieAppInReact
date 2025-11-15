@@ -1,4 +1,4 @@
-import React, {useRef, useEffect} from 'react'
+import React, {useRef, useEffect } from 'react'
 import './Navbar.css'
 import logo from '../../assets/logo.png'
 import search from '../../assets/search_icon.svg'
