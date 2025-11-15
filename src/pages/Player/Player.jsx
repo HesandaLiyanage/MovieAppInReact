@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import './Player.css'
 import back_arrow_icon from '../../assets/back_arrow_icon.png'
-import {useParams, Link} from 'react-router-dom'
+import {useParams, Link, useNavigate} from 'react-router-dom'
 
 
 
@@ -10,7 +10,8 @@ const Player = () => {
     const {id} = useParams()
 
     //instead of linking we can use useNavigate 
-    
+
+    const navigate = useNavigate();
 
     const [apiData, setApiData] = useState({
         name:"",
