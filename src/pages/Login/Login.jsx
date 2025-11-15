@@ -29,16 +29,16 @@ const Login = () => {
                     {signState==="Sign Up"?
                     <input value={name} onChange=
                     {
-                        (event)=>setName(event.target.value)
+                        (event)=>{setName(event.target.value)}
                     }
                     type="text" placeholder="    Your Name" />:<></>}
                     <input value={email} onChange=
                     {
-                        (event)=>setEmail(event.target.value)
+                        (event)=>{setEmail(event.target.value)}
                     }type="email" placeholder="    Email" />
                     <input value={password} onChange=
                     {
-                        (event)=>setPassword(event.target.value)
+                        (event)=>{setPassword(event.target.value)}
                     }type="password" placeholder="    Password" />
                     {signState==="Sign Up"?<button onClick={user_auth} type='submit'>Sign Up</button>:<button>Sign In</button>}
                     <div className="form-help">
