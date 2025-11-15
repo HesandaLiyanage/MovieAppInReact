@@ -8,8 +8,8 @@ const Player = () => {
     const [apiData, setApiData] = useState({
         name:"",
         key:"",
-        
-
+        published_at:"",
+        typeof:""
     })
 
     const options = {
@@ -23,7 +23,7 @@ const Player = () => {
     useEffect(() => {
         fetch('https://api.themoviedb.org/3/movie/1062722/videos?language=en-US', options)
         .then(res => res.json())
-        .then(res => console.log(res))
+        .then(res => setApiData(res.results))
   .catch(err => console.error(err));
     }, [])
 
