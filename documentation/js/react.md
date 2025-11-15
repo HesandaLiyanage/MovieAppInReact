@@ -204,3 +204,19 @@ how ?
 const {id} = useParams()
 thats itt
 ------------------------
+
+we know how to link in app.jsx right ?
+then how to link frm page to page.
+
+first you have to import Link from react router dom
+
+<Link to={`/player/${card.id}`} className="card" key={index} >
+                    <div className='card' key={index} > 
+                    <img src={`https://image.tmdb.org/t/p/w500`+ card.backdrop_path} alt="" />
+                    <p>{card.original_title}</p>
+                    </div>
+                    </Link>
+
+and then do this. 
+as you can see with 'to' property we can set the path that it want to go yk.
+
