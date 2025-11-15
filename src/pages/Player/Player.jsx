@@ -23,8 +23,8 @@ const Player = () => {
     useEffect(() => {
         fetch('https://api.themoviedb.org/3/movie/1062722/videos?language=en-US', options)
         .then(res => res.json())
-        .then(res => setApiData(res.results))
-  .catch(err => console.error(err));
+        .then(res => setApiData(res.results[0]))
+        .catch(err => console.error(err));
     }, [])
 
     return (
@@ -34,7 +34,7 @@ const Player = () => {
             src='https://youtube.com/embed/dQw4w9WgXcQ'
             title="trailer" frameborder='0' allowFullScreen></iframe>
             <div className="player-info">
-                <p>Published date</p>
+                <p>{}Published date</p>
                 <p>Name</p>
                 <p>Type</p>
             </div>
