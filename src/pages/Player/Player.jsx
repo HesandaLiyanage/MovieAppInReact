@@ -6,7 +6,7 @@ import {useParams} from 'react-router-dom'
 
 const Player = () => {
 
-    const {id} = useParams
+    const {id} = useParams()
 
     const [apiData, setApiData] = useState({
         name:"",
