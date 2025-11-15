@@ -192,5 +192,15 @@ fetch(`https://...`)
 <img src={`https://image.tmdb.org/t/p/w500${card.backdrop_path}`} alt="" />
 
 
+---------------------------------
+tf is useParams
 
+thatt comes from react-router-dom library
 
+so lets say you want to like pass a value with the link as a parameter.
+then you can use that
+
+how ?
+const {id} = useParams()
+thats itt
+------------------------
