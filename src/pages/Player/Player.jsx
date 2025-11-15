@@ -31,12 +31,12 @@ const Player = () => {
         <div className='player'>
             <img src={back_arrow_icon} alt="" />
             <iframe width='90%' height='90%'
-            src='https://youtube.com/embed/dQw4w9WgXcQ'
+            src={`https://youtube.com/embed/${apiData.key}`}
             title="trailer" frameborder='0' allowFullScreen></iframe>
             <div className="player-info">
-                <p>{apiData.published_at}Published date</p>
-                <p>{apiData.published_at}</p>
-                <p>{apiData.published_at}</p>
+                <p>apiData.published_at</p>
+                <p>apiData.published_at</p>
+                <p>apiData.published_at</p>
             </div>
         </div>
     )
