@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React, {useEffect, useState} from 'react'
 import './Player.css'
 import back_arrow_icon from '../../assets/back_arrow_icon.png'
 
@@ -35,8 +35,8 @@ const Player = () => {
             title="trailer" frameborder='0' allowFullScreen></iframe>
             <div className="player-info">
                 <p>apiData.published_at</p>
-                <p>apiData.published_at</p>
-                <p>apiData.published_at</p>
+                <p>apiData.name</p>
+                <p>apiData.type</p>
             </div>
         </div>
     )
