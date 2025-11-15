@@ -220,3 +220,17 @@ first you have to import Link from react router dom
 and then do this. 
 as you can see with 'to' property we can set the path that it want to go yk.
 
+-------------------------b
+
+buttt
+you have another way to navigate
+ use useNavigate() for that. and then store that shit in a variable and each time someone click something catch it with onClick and put a arrow function to do this- 
+naviagte(-2) : (navigate = useNavigate())
+
+-2 means two back clicks.
+instead of that
+navigate('/home')
+
+
+
+
