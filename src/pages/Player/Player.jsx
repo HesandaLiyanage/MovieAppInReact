@@ -5,6 +5,8 @@ import back_arrow_icon from '../../assets/back_arrow_icon.png'
 
 const Player = () => {
 
+    const {id} = useParams
+
     const [apiData, setApiData] = useState({
         name:"",
         key:"",
@@ -34,7 +36,7 @@ const Player = () => {
             src={`https://youtube.com/embed/${apiData.key}`}
             title="trailer" frameBorder='0' allowFullScreen></iframe>
             <div className="player-info">
-                <p>{apiData.published_at}</p>
+                <p>{apiData.published_at.slice(0,10)}</p>
                 <p>{apiData.name}</p>
                 <p>{apiData.type}</p>
             </div>
