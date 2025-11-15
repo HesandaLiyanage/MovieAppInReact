@@ -34,9 +34,9 @@ const Player = () => {
             src='https://youtube.com/embed/dQw4w9WgXcQ'
             title="trailer" frameborder='0' allowFullScreen></iframe>
             <div className="player-info">
-                <p>{}Published date</p>
-                <p>Name</p>
-                <p>Type</p>
+                <p>{apiData.published_at}Published date</p>
+                <p>{apiData.published_at}</p>
+                <p>{apiData.published_at}</p>
             </div>
         </div>
     )
