@@ -320,6 +320,8 @@ this to set up firebase analytics to get app usage and shit
 const auth = getAuth(app)
 initialize the auth service
 
+const db = getFirestore(app)
+initialize cloud firestore (this is a nosql db)
 
 
 
