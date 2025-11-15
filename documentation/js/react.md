@@ -231,6 +231,86 @@ naviagte(-2) : (navigate = useNavigate())
 instead of that
 navigate('/home')
 
+----------------------------------------------------
+
+HOW TO SET UP AUTHENTICATION WITH FIREBASE- 
+
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+
+import { 
+    signInWithEmailAndPassword, 
+    createUserWithEmailAndPassword, 
+    getAuth,
+    signOut } from "firebase/auth";
+
+import { 
+    addDoc,
+    collection, 
+    getFirestore } from "firebase/firestore";
+
+
+const firebaseConfig = {
+  apiKey: "AIzaSyB3IvQe-Xt0--i9yhQHDD_ifEJoJSZvS44",
+  authDomain: "netflixclonebyhess.firebaseapp.com",
+  projectId: "netflixclonebyhess",
+  storageBucket: "netflixclonebyhess.firebasestorage.app",
+  messagingSenderId: "52578054084",
+  appId: "1:52578054084:web:c710bc09d19c60e2aefe91",
+  measurementId: "G-VZXG44QQ9Q"
+};
+
+
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+const auth = getAuth(app);
+const db = getFirestore(app);
+
+const signup = async (name, email, password) => {
+    try {
+        const res = await createUserWithEmailAndPassword(auth,email,password)
+        const user = res.user;
+        await addDoc(collection(db,"user"), {
+            uid:user.uid,
+            name,
+            authProvider: "local",
+            email,
+        })
+    } catch (error) {
+        console.log(error);
+        alert(error);
+    }
+}
+
+const login = async (email, password) => {
+    try {
+        await signInWithEmailAndPassword(auth,email,password)
+    }catch (error) {
+        console.log(error);
+        alert(error)
+    }
+}
+
+const logout = async () => {
+    try {
+        signOut(auth);
+    }
+    catch(error) {
+        console.log(error);
+        alert(error);
+    }
+}
+
+export {auth, db , login , signup , logout};
+
+
+this is the configuration file. 
+in here we need to create every function to happen through firebase. so we need to happen login signup and log out. so we should  have 3 funcitns.
+that firebase config has the data it need to connect with our firebase account like api keys and shit. 
+
+with firebase you can get signinwithemailandpassword type functions. those are built in functions in firebase.we just have to pass the need shit thats all.
+
 
 
 
