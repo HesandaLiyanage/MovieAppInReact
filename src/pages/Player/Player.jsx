@@ -1,13 +1,16 @@
 import React, {useEffect, useState} from 'react'
 import './Player.css'
 import back_arrow_icon from '../../assets/back_arrow_icon.png'
-import {useParams} from 'react-router-dom'
-import {Link} from 'react-router-dom'
+import {useParams, Link} from 'react-router-dom'
+
 
 
 const Player = () => {
 
     const {id} = useParams()
+
+    //instead of linking we can use useNavigate 
+    
 
     const [apiData, setApiData] = useState({
         name:"",
@@ -33,9 +36,9 @@ const Player = () => {
 
     return (
         <div className='player'>
-            <Link to={`/player/${card.id}`} > 
+            {/* <Link to={`/`} >  */}
             <img src={back_arrow_icon} alt="" />
-            <Link/>
+            {/* </Link> */}
             <iframe width='90%' height='90%'
             src={`https://youtube.com/embed/${apiData.key}`}
             title="trailer" frameBorder='0' allowFullScreen></iframe>
