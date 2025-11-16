@@ -40,7 +40,7 @@ const Login = () => {
                     {
                         (event)=>{setPassword(event.target.value)}
                     }type="password" placeholder="    Password" />
-                    {signState==="Sign Up"?<button onClick={user_auth} type='submit'>Sign Up</button>:<button>Sign In</button>}
+                    {signState==="Sign Up"?<button onClick={user_auth} type='submit'>Sign Up</button >:<button onClick={user_auth}>Sign In</button>}
                     <div className="form-help">
                         <div className="remember">
                             <input type="checkbox" />
